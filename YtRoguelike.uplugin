@@ -4,13 +4,12 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "YtRoguelike",
-	"MarketplaceURL" : "com.epicgames.launcher://ue/marketplace/content/7d35e222ec264194a0665b8ec52611ed",
 	"Description": "",
 	"Category": "Other",
 	"CreatedBy": "Yntoo",
 	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
+	"DocsURL": "https://youtu.be/cMFCvDv-vdw",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/7d35e222ec264194a0665b8ec52611ed",
 	"SupportURL": "",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
@@ -20,7 +19,8 @@
 		{
 			"Name": "YtRoguelike",
 			"Type": "Runtime",
-			"LoadingPhase": "PreLoadingScreen"
+			"LoadingPhase": "PreLoadingScreen",
+		    "WhitelistPlatforms": [ "Win64", "Mac", "Linux", "Android", "IOS" ]
 		}
 	]
 }

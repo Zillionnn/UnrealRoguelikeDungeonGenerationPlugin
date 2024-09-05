@@ -1,10 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright Yntoo, 2024
+// All Rights Reserved.
 #pragma once
 
 #include "CoreMinimal.h"
 #include "DungeonDataAsset.h"
-#include "Subsystems/WorldSubsystem.h"
+#include "Subsystems/GameInstanceSubsystem.h"
 #include "RoguelikeSubsystem.generated.h"
 
 
@@ -48,13 +48,13 @@ struct FRoguelikeTile
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(BlueprintReadOnly, Category="Config")
 	TEnumAsByte<ETile> TileType;
 
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(BlueprintReadOnly, Category="Config")
 	int32 x;
 
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(BlueprintReadOnly, Category="Config")
 	int32 y;
 
 	// 添加自定义构造函数（可选）
@@ -76,13 +76,13 @@ protected:
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 
 public:
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category="DungeonFunc")
 	void LoadDungeonDataAsset(UDungeonDataAsset* InAsset);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category="DungeonFunc")
 	void Generate();
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category="DungeonFunc")
 	void SpawnTiles();
 
 	TArray<FRect> GetRooms();
@@ -91,6 +91,7 @@ public:
 
 	int32 GetOriginX();
 	int32 GetOriginY();
+
 protected:
 	bool MakeRoom(int x, int y, ERGDirection dir, bool firstRoom = false);
 

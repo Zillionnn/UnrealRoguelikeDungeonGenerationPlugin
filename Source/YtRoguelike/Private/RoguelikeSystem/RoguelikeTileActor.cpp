@@ -1,5 +1,5 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright Yntoo, 2024
+// All Rights Reserved.
 
 #include "RoguelikeSystem/RoguelikeTileActor.h"
 

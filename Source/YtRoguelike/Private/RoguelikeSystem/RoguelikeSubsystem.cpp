@@ -1,8 +1,8 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright Yntoo, 2024
+// All Rights Reserved.
 
 #include "RoguelikeSystem/RoguelikeSubsystem.h"
-
+#include "Engine.h"
 #include "RoguelikeSystem/RoguelikeTileActor.h"
 DEFINE_LOG_CATEGORY_STATIC(LogRogueSubSystem, All, All);
 

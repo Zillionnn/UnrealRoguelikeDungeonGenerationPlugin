@@ -1,4 +1,5 @@
-// Some copyright should be here...
+// Copyright Yntoo, 2024
+// All Rights Reserved.
 
 using UnrealBuildTool;
 

@@ -19,13 +19,13 @@ public:
 	// Sets default values for this actor's properties
 	ARoguelikeTileActor();
 
-	UPROPERTY(BlueprintReadOnly, EditAnywhere)
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Components")
 	TObjectPtr<UBoxComponent> Box;
 
-	UPROPERTY(BlueprintReadOnly, EditAnywhere)
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Components")
 	TObjectPtr<class UTextRenderComponent> TextRender;
 
-	UPROPERTY(BlueprintReadOnly, EditAnywhere)
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Components")
 	TObjectPtr<UStaticMeshComponent> MeshComponent;
 
 protected:
@@ -37,7 +37,6 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
 
 public:
 	UPROPERTY(EditAnywhere, Category="TileConfig")
@@ -58,5 +57,4 @@ public:
 	bool bDebug;
 	ETile TileType;
 	float TileOffset;
-
 };

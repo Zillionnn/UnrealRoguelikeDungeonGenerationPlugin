@@ -20,7 +20,7 @@
 			"Name": "YtRoguelike",
 			"Type": "Runtime",
 			"LoadingPhase": "PreLoadingScreen",
-		    "WhitelistPlatforms": [ "Win64", "Mac", "Linux", "Android", "IOS" ]
+		    "WhitelistPlatforms": [ "Win64" ]
 		}
 	]
 }

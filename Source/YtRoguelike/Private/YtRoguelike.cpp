@@ -1,5 +1,5 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
+// Copyright Yntoo, 2024
+// All Rights Reserved.
 #include "YtRoguelike.h"
 
 #define LOCTEXT_NAMESPACE "FYtRoguelikeModule"

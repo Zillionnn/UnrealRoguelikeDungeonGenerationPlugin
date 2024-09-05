@@ -1,5 +1,7 @@
 # Dungeon generation
 
+The blueprints in the plugin content may not be directly usable, but it is possible to create blueprint classes based on  C++ class.
+
 ## 
 
 Tutorial Video  https://youtu.be/cMFCvDv-vdw

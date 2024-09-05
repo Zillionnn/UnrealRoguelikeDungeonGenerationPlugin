@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "DungeonDataAsset.h"
-#include "Subsystems/WorldSubsystem.h"
+#include "Subsystems/GameInstanceSubsystem.h"
 #include "RoguelikeSubsystem.generated.h"
 
 

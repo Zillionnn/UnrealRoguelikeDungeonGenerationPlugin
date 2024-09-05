@@ -2,7 +2,7 @@
 // All Rights Reserved.
 
 #include "RoguelikeSystem/RoguelikeSubsystem.h"
-
+#include "Engine.h"
 #include "RoguelikeSystem/RoguelikeTileActor.h"
 DEFINE_LOG_CATEGORY_STATIC(LogRogueSubSystem, All, All);
 

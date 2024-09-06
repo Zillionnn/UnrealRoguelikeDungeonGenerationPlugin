@@ -2,6 +2,7 @@
 // All Rights Reserved.
 
 #include "RoguelikeSystem/RoguelikeTileActor.h"
+#include "Components/StaticMeshComponent.h"
 
 #include "Components/BoxComponent.h"
 #include "Components/TextRenderComponent.h"

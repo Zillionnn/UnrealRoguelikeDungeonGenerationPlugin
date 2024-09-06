@@ -2,7 +2,7 @@
 // All Rights Reserved.
 
 #include "RoguelikeSystem/RoguelikeGameMode.h"
-
+#include "Engine/GameInstance.h"
 #include "RoguelikeSystem/RoguelikeSubsystem.h"
 
 

@@ -15,11 +15,13 @@ void URoguelikeSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 	OriginY = -1;
 }
 
+
+
 /**
  * 
  * @param InAsset
  */
-void URoguelikeSubsystem::LoadDungeonDataAsset(UDungeonDataAsset* InAsset)
+void URoguelikeSubsystem::LoadDungeonDataAsset_Implementation(UDungeonDataAsset* InAsset)
 {
 	bfirstRoom = false;
 	OriginX = -1;

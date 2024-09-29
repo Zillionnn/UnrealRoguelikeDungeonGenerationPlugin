@@ -2,6 +2,7 @@
 // All Rights Reserved.
 
 #include "RoguelikeSystem/RoguelikeTileActor.h"
+#include "Components/StaticMeshComponent.h"
 
 #include "Components/BoxComponent.h"
 #include "Components/TextRenderComponent.h"
@@ -14,6 +15,8 @@ ARoguelikeTileActor::ARoguelikeTileActor()
 
 
 	Box = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision"));
+	Box->SetIsReplicated(true);
+
 	RootComponent = Box;
 
 
@@ -26,6 +29,9 @@ ARoguelikeTileActor::ARoguelikeTileActor()
 
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
 	MeshComponent->SetupAttachment(RootComponent);
+	MeshComponent->SetIsReplicated(true);
+
+	bReplicates = true;
 }
 
 
@@ -43,6 +49,7 @@ ARoguelikeTileActor::ARoguelikeTileActor()
 void ARoguelikeTileActor::BeginPlay()
 {
 	Super::BeginPlay();
+#if UE_SERVER
 	if (bDebug)
 	{
 		switch (TileType)
@@ -100,7 +107,8 @@ void ARoguelikeTileActor::BeginPlay()
 		TextRender->SetHiddenInGame(true);
 	}
 
-
+#endif
+	
 	SetMesh();
 }
 

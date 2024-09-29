@@ -76,7 +76,7 @@ protected:
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 
 public:
-	UFUNCTION(BlueprintCallable, Category="DungeonFunc")
+	UFUNCTION(BlueprintCallable, Category="DungeonFunc", Server, Reliable)
 	void LoadDungeonDataAsset(UDungeonDataAsset* InAsset);
 
 	UFUNCTION(BlueprintCallable, Category="DungeonFunc")

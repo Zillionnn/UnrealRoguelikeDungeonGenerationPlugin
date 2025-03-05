@@ -32,6 +32,8 @@ void URoguelikeSubsystem::LoadDungeonDataAsset_Implementation(UDungeonDataAsset*
 		DungeonDataAsset = InAsset;
 		UE_LOG(LogRogueSubSystem, Log, TEXT(" --- load dungeon data asset success ----"));
 
+		Rooms.Empty();
+		Exits.Empty();
 		Tiles.Empty();
 
 		for (int32 i = 0; i < DungeonDataAsset->MapHeight; i++)
